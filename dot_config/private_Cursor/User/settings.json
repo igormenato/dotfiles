@@ -1,0 +1,227 @@
+{
+  // =====================================
+  // CORE VS CODE SETTINGS
+  // =====================================
+  // Application
+  "update.mode": "default",
+  // Security
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  // Extensions
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
+  // =====================================
+  // WINDOW & WORKBENCH
+  // =====================================
+  // Window
+  "window.autoDetectColorScheme": true,
+  "window.title": "${dirty}${rootName}",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Cursor Dark High Contrast",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.productIconTheme": "Default",
+  "workbench.startupEditor": "none",
+  // Workbench Behavior
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.splitInGroupLayout": "horizontal",
+  "workbench.list.smoothScrolling": true,
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  // Breadcrumbs
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": false,
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
+  // Zen Mode
+  "zenMode.centerLayout": false,
+  // =====================================
+  // EDITOR
+  // =====================================
+  // Font & Display
+  "editor.fontFamily": "Maple Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "normal",
+  // Cursor & Selection
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  // Layout & Visual
+  //"editor.rulers": [80, 120],
+  "editor.glyphMargin": true,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.wordWrap": "on",
+  // Indentation & Formatting
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.trimAutoWhitespace": true,
+  // Code Actions
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "never",
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit",
+  },
+  // IntelliSense & Suggestions
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlayHints.enabled": "on",
+  "editor.inlineSuggest.enabled": true,
+  "editor.parameterHints.enabled": true,
+  "editor.suggestSelection": "first",
+  // Bracket & Guide Features
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.indentation": true,
+  "editor.linkedEditing": true,
+  // Syntax & Highlighting
+  "editor.semanticHighlighting.enabled": true,
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  // Diff
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.wordWrap": "on",
+  // =====================================
+  // TERMINAL
+  // =====================================
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "Maple Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.smoothScrolling": true,
+  // =====================================
+  // FILES & SEARCH
+  // =====================================
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    ".env.*": "dotenv",
+    ".eslintrc": "jsonc",
+    ".prettierrc": "jsonc",
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/*.tmp": true,
+    "**/tmp": true,
+    "**/temp": true,
+    // "**/node_modules": true,
+    // "**/dist": true,
+    // "**/build": true,
+    // "**/out": true,
+    // "**/.next": true
+  },
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.next/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/out/**": true,
+    "**/__pycache__/**": true,
+    "**/.pytest_cache/**": true,
+    "**/.venv/**": true,
+    "**/venv/**": true,
+    "**/.hg/**": true,
+    "**/.svn/**": true,
+    "**/target/**": true,
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/venv": true,
+    // "**/.next": true,
+    // "**/build": true,
+    // "**/dist": true,
+    // "**/out": true,
+    "**/node_modules": true,
+    "**/target": true,
+    "**/vendor": true,
+  },
+  "search.followSymlinks": true,
+  "search.smartCase": true,
+  // =====================================
+  // DEVELOPMENT TOOLS
+  // =====================================
+  // Git & GitHub
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // ESLint
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "typescript",
+    "javascript",
+    "typescriptreact",
+    "javascriptreact",
+    "graphql",
+  ],
+  // =====================================
+  // LANGUAGE-SPECIFIC CONFIGURATIONS
+  // =====================================
+  // Emmet
+  "emmet.includeLanguages": {
+    "html-eex": "html",
+    "javascript": "javascriptreact",
+    "markdown": "html",
+    "phoenix-heex": "html",
+    "svelte": "html",
+    "typescript": "typescriptreact",
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+  },
+  // Svelte
+  "svelte.enable-ts-plugin": true,
+  // Tailwind CSS
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "javascriptreact": "javascriptreact",
+    "typescript": "typescript",
+    "typescriptreact": "typescriptreact",
+  },
+  // =====================================
+  // LANGUAGE FORMATTERS
+  // =====================================
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit",
+    },
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true,
+  },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true,
+    },
+  },
+}
