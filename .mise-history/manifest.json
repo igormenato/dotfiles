@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "enrollment": [
+    {
+      "path": "home/.config/fish",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    }
+  ],
+  "exclude": [],
+  "recipients": [],
+  "permissions": {
+    "home/.config/fish": 448,
+    "home/.config/fish/fish_variables": 384
+  }
+}
