@@ -1,0 +1,16 @@
+[plugins]
+co = "https://github.com/anysphere/origin-cli-asdf"
+
+[tool_alias]
+cursor-agent = 'http:cursor-agent[bin_path=bin,postinstall=mkdir -p "$MISE_TOOL_INSTALL_PATH/bin" && ln -sfn ../dist-package/cursor-agent "$MISE_TOOL_INSTALL_PATH/bin/cursor-agent"]'
+
+[tools]
+co = "latest"
+cursor-agent = "latest"
+node = "latest"
+opencode = "latest"
+rust = "latest"
+
+[dotfiles]
+"~/.config/fish" = { mode = "track" }
+"~/.config/mise/config.toml" = { mode = "track" }
