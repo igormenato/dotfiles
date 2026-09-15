@@ -1,0 +1,140 @@
+{
+  // =====================================
+  // CORE
+  // =====================================
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
+  // =====================================
+  // WINDOW & WORKBENCH
+  // =====================================
+  "window.autoDetectColorScheme": true,
+  "window.title": "${dirty}${rootName}",
+  "window.titleBarStyle": "custom",
+  "workbench.preferredDarkColorTheme": "Cursor Dark",
+  "workbench.preferredLightColorTheme": "Cursor Light",
+  "workbench.startupEditor": "none",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.list.smoothScrolling": true,
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "breadcrumbs.icons": false,
+  "explorer.compactFolders": false,
+  "zenMode.centerLayout": false,
+  // =====================================
+  // EDITOR
+  // =====================================
+  "editor.fontFamily": "Maple Mono",
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.smoothScrolling": true,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlayHints.enabled": "on",
+  "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.wordWrap": "on",
+  // =====================================
+  // TERMINAL
+  // =====================================
+  "terminal.integrated.fontFamily": "Maple Mono NF",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.smoothScrolling": true,
+  // =====================================
+  // FILES & SEARCH
+  // =====================================
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  // ElixirLS does not register .heex; html-eex is the language it formats.
+  "files.associations": {
+    "*.heex": "html-eex"
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.next/**": true,
+    "**/dist/**": true,
+    "**/_build/**": true,
+    "**/deps/**": true,
+    "**/cover/**": true,
+    "**/.elixir_ls/**": true,
+    "**/__pycache__/**": true,
+    "**/.pytest_cache/**": true,
+    "**/.ruff_cache/**": true,
+    "**/.mypy_cache/**": true,
+    "**/.venv/**": true,
+    "**/venv/**": true,
+    "**/target/**": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "**/dist": true,
+    "**/_build": true,
+    "**/deps": true,
+    "**/cover": true,
+    "**/.elixir_ls": true,
+    "**/.ruff_cache": true,
+    "**/.mypy_cache": true,
+    "**/.venv": true,
+    "**/venv": true,
+    "**/target": true
+  },
+  "search.smartCase": true,
+  // =====================================
+  // GIT
+  // =====================================
+  "git.autofetch": true,
+  "git.pruneOnFetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+  // =====================================
+  // LANGUAGES
+  // =====================================
+  "emmet.includeLanguages": {
+    "html-eex": "html",
+    "markdown": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.oxc": "explicit"
+    }
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.tabSize": 4
+  },
+  "[elixir][eex][html-eex]": {
+    "editor.defaultFormatter": "elixir-lsp.elixir-ls"
+  },
+  "[dockercompose][dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+  }
+}

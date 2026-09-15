@@ -1,0 +1,11 @@
+anysphere.cursorpyright
+anysphere.remote-containers
+anysphere.remote-ssh
+bradlc.vscode-tailwindcss
+charliermarsh.ruff
+elixir-lsp.elixir-ls
+ms-azuretools.vscode-containers
+ms-python.debugpy
+ms-python.python
+oxc.oxc-vscode
+rust-lang.rust-analyzer

@@ -12,5 +12,7 @@ opencode = "latest"
 rust = "latest"
 
 [dotfiles]
+"~/.config/Cursor/User/extensions.txt" = { mode = "track" }
+"~/.config/Cursor/User/settings.json" = { mode = "track" }
 "~/.config/fish" = { mode = "track" }
 "~/.config/mise/config.toml" = { mode = "track" }

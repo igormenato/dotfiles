@@ -8,6 +8,18 @@
       "variants": []
     },
     {
+      "path": "home/.config/Cursor/User/extensions.txt",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/Cursor/User/settings.json",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
       "path": "home/.config/fish",
       "autosave": true,
       "encrypt": false,
