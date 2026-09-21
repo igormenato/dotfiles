@@ -26,10 +26,11 @@
       "variants": []
     }
   ],
-  "exclude": [],
+  "exclude": [
+    "~/.config/fish/fish_variables"
+  ],
   "recipients": [],
   "permissions": {
-    "home/.config/fish": 448,
-    "home/.config/fish/fish_variables": 384
+    "home/.config/fish": 448
   }
 }

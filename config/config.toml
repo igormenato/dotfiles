@@ -8,3 +8,6 @@ rust = "latest"
 "~/.config/Cursor/User/settings.json" = { mode = "track" }
 "~/.config/fish" = { mode = "track" }
 "~/.config/mise/config.toml" = { mode = "track" }
+
+[history]
+exclude = ["~/.config/fish/fish_variables"]
